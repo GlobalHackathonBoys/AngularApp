@@ -1,6 +1,6 @@
 # Habitat
 
-# IMPORTANT : Auth0 Set to Http://localhost:3000, plese use this port with ng serve
+# IMPORTANT : Auth0 Set to Http://localhost:3000, please use this port with ng serve
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
