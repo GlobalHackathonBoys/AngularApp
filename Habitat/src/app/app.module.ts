@@ -7,6 +7,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ProfileComponent } from './profile/profile.component';
 import { DayPlannerComponent } from './day-planner/day-planner.component';
 import { SortByDatePipe } from './shared/pipes/sort-by-date.pipe';
+import { YesterdaysHandoverComponent } from './yesterdays-handover/yesterdays-handover.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SortByDatePipe } from './shared/pipes/sort-by-date.pipe';
     NavBarComponent,
     ProfileComponent,
     DayPlannerComponent,
-    SortByDatePipe
+    SortByDatePipe,
+    YesterdaysHandoverComponent
   ],
   imports: [
     BrowserModule,

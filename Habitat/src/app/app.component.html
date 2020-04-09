@@ -5,11 +5,16 @@
   </div>
   <div class="col-8">
     <div class="row">
-      <p>Today's handover notes</p>
+      <div class="col mb-4">
+        <app-yesterdays-handover></app-yesterdays-handover>
+      </div>
     </div>
     <div class="row">
       <div class="col">
         <app-day-planner></app-day-planner>
+        <div class="my-3 text-center">
+          <button class="btn btn-primary mx-auto">Complete day</button>
+        </div>
       </div>
       <div class="col">
         <p>Notes</p>
