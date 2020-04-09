@@ -1,0 +1,12 @@
+<h4>Today's tasks</h4>
+<ul class="timeline">
+  <li *ngFor="let task of tasks; let i = index" class="timeline__item">
+    <small class="text-muted">{{ task.time | date: 'shortTime' }}</small>
+    <h5>{{ task.title }}</h5>
+    <p>{{ task.description }}</p>
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" [id]="'checkbox-' + i" [checked]="task.isCompleted">
+      <label class="custom-control-label" [for]="'checkbox-' + i">Completed</label>
+    </div>
+  </li>
+</ul>
