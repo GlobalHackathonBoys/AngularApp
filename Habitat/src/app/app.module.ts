@@ -11,6 +11,9 @@ import { SortByDatePipe } from './shared/pipes/sort-by-date.pipe';
 import { YesterdaysHandoverComponent } from './yesterdays-handover/yesterdays-handover.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { DaySwitcherComponent } from './day-switcher/day-switcher.component';
+import { NewsComponent } from './news/news.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { NewsService } from './shared/services/news/news.service';
 
 @NgModule({
   declarations: [
@@ -22,14 +25,16 @@ import { DaySwitcherComponent } from './day-switcher/day-switcher.component';
     YesterdaysHandoverComponent,
     NotesComponent,
     DaySwitcherComponent,
+    NewsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FontAwesomeModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClient, NewsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
