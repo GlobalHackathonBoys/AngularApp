@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { HandoverService } from '../shared/services/handover/handover.service';
+
+export interface Handover {
+  date: Date,
+  notes: string
+}
 
 @Component({
   selector: 'app-yesterdays-handover',
@@ -6,10 +12,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./yesterdays-handover.component.scss']
 })
 export class YesterdaysHandoverComponent implements OnInit {
+  handover: Handover;
 
-  constructor() { }
+  constructor(private handoverService: HandoverService) { }
 
   ngOnInit(): void {
+    this.handover = this.getHandover();
+  }
+
+  getHandover(): Handover {
+    return this.handoverService.getHandoverNotes()
   }
 
 }
