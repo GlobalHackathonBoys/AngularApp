@@ -1,23 +1,21 @@
-<div class="row">
-  <div class="col-4">
-    <p>Left</p>
-    <app-nav-bar></app-nav-bar>
-  </div>
-  <div class="col-8">
-    <div class="row">
-      <div class="col mb-4">
-        <app-yesterdays-handover></app-yesterdays-handover>
-      </div>
+<div class="p-4">
+  <div class="row">
+    <div class="col-4">
+      <p>Left</p>
+      <app-nav-bar></app-nav-bar>
     </div>
-    <div class="row">
-      <div class="col">
-        <app-day-planner></app-day-planner>
-        <div class="my-3 text-center">
-          <button class="btn btn-primary mx-auto">Complete day</button>
+    <div class="col-8">
+      <div class="row">
+        <div class="col">
+          <app-day-planner></app-day-planner>
+          <div class="my-3 text-center">
+            <button class="btn btn-primary mx-auto">Complete day</button>
+          </div>
         </div>
-      </div>
-      <div class="col">
-        <p>Notes</p>
+        <div class="col">
+          <app-yesterdays-handover class="d-block"></app-yesterdays-handover>
+          <app-notes class="d-block mt-4"></app-notes>
+        </div>
       </div>
     </div>
   </div>

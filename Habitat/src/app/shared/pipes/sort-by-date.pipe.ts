@@ -1,16 +1,20 @@
 
 import { Pipe, PipeTransform } from '@angular/core';
-import { Task } from '../../day-planner/day-planner.component'
+
+interface Item {
+  date: Date,
+  [key: string]: any
+}
 
 @Pipe({
   name: 'sortByDate',
 })
 export class SortByDatePipe implements PipeTransform {
-  transform(tasks: Array<Task>): unknown {
+  transform(tasks: Array<Item>): unknown {
     return tasks.sort((a, b) => {
-      if (a.time < b.time) {
+      if (a.date < b.date) {
         return -1;
-      } else if (a.time < b.time) {
+      } else if (a.date < b.date) {
         return 1;
       } else {
         return 0;

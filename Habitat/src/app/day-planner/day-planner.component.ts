@@ -3,7 +3,7 @@ import { DayPlannerService } from '../shared/services/day-planner/day-planner.se
 
 export interface Task {
   id: number,
-  time: Date,
+  date: Date,
   title: string,
   description: string,
   isCompleted: boolean

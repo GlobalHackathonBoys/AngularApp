@@ -1,7 +1,4 @@
-$color-green: #52b839;
-$color-red: #bf2121;
-$color-grey: #d4d9df;
-$color-grey-light: #949494;
+@import '../../_variables.scss';
 
 .timeline {
   position: relative;

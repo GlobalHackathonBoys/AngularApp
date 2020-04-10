@@ -1,0 +1,23 @@
+@import '../../variables.scss';
+
+.notes {
+  padding: 0;
+  list-style-type: none;
+}
+
+.note {
+  padding: 0 0 20px 0;
+  &__delete {
+    cursor: pointer;
+
+    .note__icon {
+      transition: all 300ms;
+    }
+
+    &:hover {
+      .note__icon {
+        color: $color-red;
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 <h6 class="mb-3">Today's tasks</h6>
 <ul class="timeline">
-  <li *ngFor="let task of tasks | sortByDate; let i = index" class="timeline__item" [ngClass]="{ 'timeline__item--overdue': (isOverdue(task.time) && !task.isCompleted), 'timeline__item--completed': task.isCompleted }">
-    <small class="text-muted">{{ task.time | date: 'shortTime' }}</small>
+  <li *ngFor="let task of tasks | sortByDate; let i = index" class="timeline__item" [ngClass]="{ 'timeline__item--overdue': (isOverdue(task.date) && !task.isCompleted), 'timeline__item--completed': task.isCompleted }">
+    <small class="text-muted">{{ task.date | date: 'shortTime' }}</small>
     <h5>{{ task.title }}</h5>
     <p>{{ task.description }}</p>
     <div class="custom-control custom-checkbox">
