@@ -1,0 +1,4 @@
+<h1>{{ today | date: 'dd'}}</h1>
+<p>{{ today | date: 'MMM' }}</p>
+<button (click)="changeDate(-1)" class="btn btn-light">back</button>
+<button (click)="changeDate(1)" class="btn btn-light">forward</button>

@@ -10,6 +10,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { SortByDatePipe } from './shared/pipes/sort-by-date.pipe';
 import { YesterdaysHandoverComponent } from './yesterdays-handover/yesterdays-handover.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { DaySwitcherComponent } from './day-switcher/day-switcher.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     SortByDatePipe,
     YesterdaysHandoverComponent,
     NotesComponent,
+    DaySwitcherComponent,
   ],
   imports: [
     BrowserModule,
