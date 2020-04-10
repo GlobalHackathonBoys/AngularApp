@@ -14,6 +14,9 @@ import { DaySwitcherComponent } from './day-switcher/day-switcher.component';
 import { NewsComponent } from './news/news.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NewsService } from './shared/services/news/news.service';
+import { ImagesComponent } from './images/images.component';
+import { SlideshowModule } from 'ng-simple-slideshow';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
 @NgModule({
   declarations: [
@@ -26,13 +29,16 @@ import { NewsService } from './shared/services/news/news.service';
     NotesComponent,
     DaySwitcherComponent,
     NewsComponent,
+    ImagesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    SlideshowModule,
+    NgbModule
   ],
   providers: [HttpClient, NewsService],
   bootstrap: [AppComponent]
